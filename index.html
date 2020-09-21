@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This is an SEO Change -->
+    <meta name="description" content="A personal budget website." />
     <title>Personal Budget</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
+    <!-- This is an A11y Change -->
+    <a class="skip" href="#main">Skip to content</a>
+
     <!-- This is a Semantic HTML Change -->
     <nav class="menu">
       <ul>
@@ -25,7 +30,7 @@
     </section>
 
     <!-- This is a Semantic HTML Change -->
-    <section class="container center">
+    <section id="main" class="container center">
       <div class="page-area">
         <!-- This is a Semantic HTML Change -->
         <article class="text-box">
@@ -103,7 +108,11 @@
 
     <!-- This is a Semantic HTML Change -->
     <footer class="bottom">
-      <div class="center">All rights reserved &copy; Fabio Nolasco</div>
+      <div itemscope class="center">
+        All rights reserved &copy;
+        <!-- This is an SEO Change -->
+        <span itemprop="name">Fabio Nolasco</span>
+      </div>
     </footer>
   </body>
 </html>

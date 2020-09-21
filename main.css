@@ -14,6 +14,26 @@ nav.menu {
   padding: 0 40px;
 }
 
+.skip {
+  position: absolute;
+  left: -99999px;
+  top: 8px;
+  font-size: 1.4em;
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+.skip:focus {
+  left: 40px;
+}
+
+.skip:hover {
+  text-decoration: underline;
+  color: #b4c6f0;
+}
+
 nav.menu ul,
 nav.menu ul li {
   margin: 0;
